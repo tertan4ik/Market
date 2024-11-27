@@ -14,16 +14,16 @@ namespace WinFormsApp1
 
         private void label3_Click(object sender, EventArgs e)
         {
-   
+            Form sign = new SignInForm();
+            sign.Show();
+            this.Hide();
 
         }
 
         private void label5_Click(object sender, EventArgs e)
-        {
-            string data = "¬ход";
-            Form reg = new RegForm(data);
-            reg.Show();
-            this.FormClosed += (s, args) => this.Close();
+        {          
+            Form reg = new RegForm();
+            reg.Show();       
             this.Hide();
         }
     }
